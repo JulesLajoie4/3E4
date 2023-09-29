@@ -4,10 +4,10 @@ import dayjs from 'dayjs';
 
 const ZERO_KELVIN = -273.15;
 
-class PlanetRepository {
+class ObservationRepository {
 
     retrieveAll(){
-        return Planet.find();
+        return Observation.find();
     }
 
     retrieveByCriteria(criteria){
@@ -32,8 +32,8 @@ class PlanetRepository {
         return Observation.findById(idPlanet);
     }
 
-    create(planet){
-        return Observation.create(planet);
+    create(observation){
+        return Observation.create(observation);
 
     }
 
@@ -58,6 +58,8 @@ class PlanetRepository {
 
         return planet
     }
+
+
 }
 
-export default new PlanetRepository();
+export default new ObservationRepository();

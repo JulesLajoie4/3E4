@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
     res.status(200).end();
 });
 
-app.use('/planets',planetsRouter);
+app.use('/observations',planetsRouter);
 app.use('/explorers',explorersRouter);
 //Si d'autres routers les mettre avant le middleware de gestion d'error
 

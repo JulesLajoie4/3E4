@@ -3,7 +3,8 @@ import HttpError from 'http-errors';
 
 import Planet from '../models/planet-model.js';
 import planetModel from '../models/planet-model.js';
-import planetRepository from '../repositories/planet-repository.js';
+import planetRepository from '../repositories/observation-repository.js';
+import observationRepository from '../repositories/observation-repository.js';
 
 const router = express.Router();
 
@@ -12,9 +13,10 @@ class PlanetsRoutes {
     constructor() {
         router.get('/', this.getAll);
         router.get('/:idPlanet', this.getOne);
-        router.delete('/:idPlanet', this.deleteOne);
+        router.delete('/:idObsevation', this.deleteOne);
         router.post('/', this.post);
     }
+
 
     async getAll(req, res, next) {
 
@@ -94,23 +96,25 @@ class PlanetsRoutes {
 
     }
 
+    // En delete une
     deleteOne(req, res, next) {
         return next(HttpError.MethodNotAllowed());
     }
 
+    // Créer une observation
     async post(req, res, next) {
         console.log(req.body);
         try{
 
             if(Object.keys(req.body).length === 0)
             {
-                return next(HttpError.BadRequest('Impossible de créer une planète sans propriété')); // POUR TP, code 400 !!!!!
+                return next(HttpError.BadRequest('Impossible de créer une observation sans propriété')); // POUR TP, code 400 !!!!!
             }
 
-            let newPlanet = await planetRepository.create(req.body);
-            newPlanet = newPlanet.toObject({getters:false, virtuals:false});
-            newPlanet = planetRepository.transform(newPlanet);
-            res.status(201).json(newPlanet);
+            let newObservation = await observationRepository.create(req.body);
+            newObsevation = newObservation.toObject({getters:false, virtuals:false});
+            newObsevation = observationRepository.transform(newObservation);
+            res.status(201).json(newObservation);
         }
         catch(err){
             return next(err);

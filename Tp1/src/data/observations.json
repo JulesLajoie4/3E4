@@ -64,7 +64,7 @@
         "clouds": {
             "cloudcover": 0.1
         }, 
-        "hexMatrix": ["1x68", "2xAB", "0xAA", "0x28", "3xE7"],
+        "hexMatrix": ["0x68", "2xAB", "0xAA", "0x28", "0xE7"],
         "observationDate": "2008-10-10T14:23:47" 
         
     },
@@ -87,7 +87,7 @@
         "clouds": {
             "cloudcover": 0.6
         }, 
-        "hexMatrix": ["1168", "0xBB", "8xCD", "4x48", "3x55"],
+        "hexMatrix": ["0x68", "0xBB", "0xCD", "0x48", "0x55"],
         "observationDate": "2006-04-19T07:12:14" 
         
     },
@@ -110,7 +110,7 @@
         "clouds": {
             "cloudcover": 0.2
         }, 
-        "hexMatrix": ["1118", "11BB", "6xBD", "4x48", "3x55"],
+        "hexMatrix": ["0x18", "0xCB", "0xBD", "0x48", "0x55"],
         "observationDate": "2012-08-11T13:02:14" 
         
     }
