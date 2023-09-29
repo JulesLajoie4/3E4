@@ -1,0 +1,117 @@
+[
+    {
+        "station": {
+            "name": "STATION1",
+            "planet": "Xatov"
+        },
+        "temperature": 32,
+        "feelslike": 35,
+        "humidity": 8,
+        "pressure": 1023,
+        "airQuality": 29,
+        "uvIndex": 4,
+        "wind":{
+            "speed":25,
+            "degree": 205
+        },
+        "clouds": {
+            "cloudcover": 0.4
+        }, 
+        "hexMatrix": ["0x67", "0xAA", "0xAC", "0x07", "0xE4"],
+        "observationDate": "2001-01-02T08:21:36" 
+           
+        
+        
+    },
+    {
+        "station": {
+            "name": "STATION2",
+            "planet": "Kobe"
+        },
+        "temperature": 38,
+        "feelslike": 47,
+        "humidity": 12,
+        "pressure": 588,
+        "airQuality": 22,
+        "uvIndex": 9,
+        "wind":{
+            "speed":14,
+            "degree": 170
+        },
+        "clouds": {
+            "cloudcover": 0.1
+        }, 
+        "hexMatrix": ["0x68", "0xAB", "0xAD", "0x08", "0xE5"],
+        "observationDate": "2002-01-30T12:28:38" 
+        
+    },
+
+    {
+        "station": {
+            "name": "STATION3",
+            "planet": "Mj"
+        },
+        "temperature": 38,
+        "feelslike": 47,
+        "humidity": 12,
+        "pressure": 588,
+        "airQuality": 22,
+        "uvIndex": 9,
+        "wind":{
+            "speed":14,
+            "degree": 170
+        },
+        "clouds": {
+            "cloudcover": 0.1
+        }, 
+        "hexMatrix": ["1x68", "2xAB", "0xAA", "0x28", "3xE7"],
+        "observationDate": "2008-10-10T14:23:47" 
+        
+    },
+
+    {
+        "station": {
+            "name": "STATION4",
+            "planet": "Shaq"
+        },
+        "temperature": 22,
+        "feelslike": 25,
+        "humidity": 6,
+        "pressure": 888,
+        "airQuality": 52,
+        "uvIndex": 4,
+        "wind":{
+            "speed":17,
+            "degree": 192
+        },
+        "clouds": {
+            "cloudcover": 0.6
+        }, 
+        "hexMatrix": ["1168", "0xBB", "8xCD", "4x48", "3x55"],
+        "observationDate": "2006-04-19T07:12:14" 
+        
+    },
+
+    {
+        "station": {
+            "name": "STATION5",
+            "planet": "Curry"
+        },
+        "temperature": 31,
+        "feelslike": 33,
+        "humidity": 4,
+        "pressure": 701,
+        "airQuality": 21,
+        "uvIndex": 6,
+        "wind":{
+            "speed":11,
+            "degree": 113
+        },
+        "clouds": {
+            "cloudcover": 0.2
+        }, 
+        "hexMatrix": ["1118", "11BB", "6xBD", "4x48", "3x55"],
+        "observationDate": "2012-08-11T13:02:14" 
+        
+    }
+]
